@@ -5,7 +5,7 @@ To start this application run the following command:
 ```
 python app.py
 ```
-and navigate to the following url: [http://localhost:8080](http://localhost:8080)
+and navigate to the following url: [http://localhost:5000](http://localhost:5000)
 
 **NOTE:** it might take a minute to respond the first time
 
