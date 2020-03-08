@@ -35,7 +35,7 @@ python unittests/ModelTests.py
 ```
 
 ## 3. (Re)Training the model
-The following script provides data ingestion and retraining all models (optimal model was achived by comparing and grid-search):
+The following script provides data ingestion and retraining all models (optimal model was achived by comparing with grid-search):
 ```
 python solution_guidance/model.py
 ```
