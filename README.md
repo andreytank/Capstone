@@ -29,7 +29,7 @@ To run only the logging tests
 python unittests/LoggingTests.py
 ```
 To run only the model tests
-(all read-write tests create models with prefix 'test' that wouldn't be used in demo)
+(all read-write tests create 'test'-prefix models that wouldn't be used in API)
 ```
 python unittests/ModelTests.py
 ```
