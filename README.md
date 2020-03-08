@@ -1,15 +1,15 @@
-# Solution for *AI in Production* (coursera.org)
+# Solution for *AI Workflow: AI in Production Capstone*
 
 ## 1. Running the application
 To start this application run the following command:
 ```
-python app.py
+python flask run
 ```
 and navigate to the following url: [http://localhost:5000](http://localhost:5000)
 
-**NOTE:** it might take a minute to respond the first time
+**NOTE:** it might take awhile to load all models
 
-## 2. Running tests
+## 2. Running API-unit tests
 **NOTE:** Before running the unit tests, make sure the previous command is running
 
 To run all the tests (summary style):
@@ -24,13 +24,18 @@ To run only the api tests
 ```
 python unittests/ApiTests.py
 ```
+To run only the logging tests
+```
+python unittests/LoggingTests.py
+```
 To run only the model tests
+(all read-write tests create models with prefix 'test' that wouldn't be used in demo)
 ```
 python unittests/ModelTests.py
 ```
 
 ## 3. (Re)Training the model
-A script is available to automate the ingestion of observations (and re-train all models):
+The following script provides data ingestion and retraining all models (optimal model was achived by comparing and grid-search):
 ```
 python solution_guidance/model.py
 ```
